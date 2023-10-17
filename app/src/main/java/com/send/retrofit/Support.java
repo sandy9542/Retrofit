@@ -8,6 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Support {
-    private  String url;
-    private  String text;
+    private String url;
+    private String text;
 }

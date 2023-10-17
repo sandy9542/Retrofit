@@ -2,7 +2,9 @@ package com.send.retrofit;
 
 import android.os.Bundle;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -13,7 +15,8 @@ import retrofit2.http.Path;
 
 public class MainActivity extends AppCompatActivity {
     private UserData userData;
-    interface  RequestUser{
+
+    interface RequestUser {
         @GET("/api/users/{userId}")
         Call<UserData> getUser(@Path("userId") String userId);
     }
