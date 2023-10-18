@@ -13,7 +13,8 @@ import retrofit2.http.Path;
 
 public class MainActivity extends AppCompatActivity {
     private UserData userData;
-    interface  RequestUser{
+
+    interface RequestUser {
         @GET("/api/users/{userId}")
         Call<UserData> getUser(@Path("userId") String userId);
     }
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         requestUser.getUser("3").enqueue(new Callback<UserData>() {
             @Override
             public void onResponse(Call<UserData> call, Response<UserData> response) {
-//                textView.setText(response.body().);
+                textView.setText(response.body().first_name);
             }
 
             @Override
