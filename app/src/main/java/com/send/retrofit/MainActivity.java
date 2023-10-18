@@ -2,9 +2,7 @@ package com.send.retrofit;
 
 import android.os.Bundle;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -38,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         requestUser.getUser("3").enqueue(new Callback<UserData>() {
             @Override
             public void onResponse(Call<UserData> call, Response<UserData> response) {
-//                textView.setText(response.body().);
+                textView.setText(response.body().first_name);
             }
 
             @Override
