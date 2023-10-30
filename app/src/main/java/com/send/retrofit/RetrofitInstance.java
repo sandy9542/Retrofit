@@ -1,6 +1,7 @@
 package com.send.retrofit;
 
 import static com.send.retrofit.MainActivity.api;
+
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
@@ -9,7 +10,7 @@ public class RetrofitInstance {
     public static RetrofitInstance instance;
     ApiInterface apiInterface;
 
-     RetrofitInstance() {
+    RetrofitInstance() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(api)
                 .addConverterFactory(GsonConverterFactory.create())
