@@ -1,4 +1,4 @@
-package com.send.retrofit;
+package com.send.retrofit.model;
 
 public class UserModel {
     int albumId;

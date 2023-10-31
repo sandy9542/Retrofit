@@ -1,4 +1,7 @@
-package com.send.retrofit;
+package com.send.retrofit.apis;
+
+import com.send.retrofit.model.Student;
+import com.send.retrofit.model.UserModel;
 
 import java.util.List;
 
@@ -10,5 +13,8 @@ public interface ApiInterface {
 
     @GET("/photos")
     Call<List<UserModel>> getUser();
+
+//    @POST("/api/users")
+//    Call<List<Student>> getData();
 
 }
