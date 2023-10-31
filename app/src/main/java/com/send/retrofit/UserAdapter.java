@@ -8,8 +8,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.send.retrofit.model.UserModel;
-
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;

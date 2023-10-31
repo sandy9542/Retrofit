@@ -11,11 +11,18 @@ import com.send.retrofit.model.UserModel;
 
 import java.util.List;
 
+
+
+
+import com.send.retrofit.model.UserModel;
+
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
+    private UserData userData;
 
     public static String api = "https://jsonplaceholder.typicode.com";
     List<UserModel> userModelList;
@@ -59,7 +66,4 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
     }
-
-//    private void postBtn() {
-//    }
 }
