@@ -13,9 +13,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.userHolder> {
-    MainActivity mainActivity;
-    List<UserModel> userModelList;
-
+    private MainActivity mainActivity;
+    private List<UserModel> userModelList;
 
     public UserAdapter(MainActivity mainActivity, List<UserModel> userModelList) {
         this.mainActivity = mainActivity;
