@@ -2,7 +2,6 @@ package com.send.retrofit;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -15,6 +14,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
+    private UserData userData;
 
     public static String api = "https://jsonplaceholder.typicode.com";
     List<UserModel> userModelList;
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<UserModel>> call, Response<List<UserModel>> response) {
                 userModelList = response.body();
-                rcvMain.setAdapter(new UserAdapter(MainActivity.this,userModelList));
+                rcvMain.setAdapter(new UserAdapter(MainActivity.this, userModelList));
             }
 
             @Override
