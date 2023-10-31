@@ -2,28 +2,16 @@ package com.send.retrofit;
 
 import android.os.Bundle;
 import android.util.Log;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.send.retrofit.model.UserModel;
-
 import java.util.List;
-
-
-
-
-import com.send.retrofit.model.UserModel;
-
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
-    private UserData userData;
-
     public static String api = "https://jsonplaceholder.typicode.com";
     List<UserModel> userModelList;
 
